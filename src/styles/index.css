@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("../assets/about-me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.box-2 {
+  margin-top: 2%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 50px cadetblue;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+/* header */
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+
+#navbar {
+  background-color: cadetblue;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.my-card-about-me {
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.my-card-skils {
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+  border-radius: 20px;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.my-card-skils {
+  flex: 1 1 auto;
+  padding: 1.25rem 1.25rem;
+}
+.my-card-skils:hover{
+  box-shadow: 0 0 50px cadetblue;
+}
+
+.my-progress{
+  padding: 1.25rem 1.25rem;
+  text-align: start;
+  margin: 0 auto;
+ 
+}
+
