@@ -5,7 +5,12 @@ import todo from "../assets/todo-list.png";
 
 function Project() {
   return (
-    <div className="row d-flex justify-content-center">{formatProjects()}</div>
+    <div className="projects">
+      <h2 className="display-4 text-center">Check out some of my work</h2>
+      <div className="row">
+        {formatProjects()}
+      </div>
+    </div>
   );
 }
 
@@ -13,7 +18,7 @@ function formatProjects() {
   const weatherDis =
     "A simple weather app developed with react. you can enter the city or get your location via geolocation";
   const todoDis =
-    "A simple todo list app developed with react you can add items to the list and delete them by clicking on the item";
+    "A simple todo list app developed with react. you can add items to the list and delete them by clicking on the item";
 
   const projects = [
     {
@@ -25,7 +30,7 @@ function formatProjects() {
       link: "https://github.com/Uri121/my-weather"
     },
     {
-      homePage: "https://uri121.github.io/my-weather/",
+      homePage: "https://uri121.github.io/todo-list/",
       title: "Todo List",
       image: todo,
       category: "React",

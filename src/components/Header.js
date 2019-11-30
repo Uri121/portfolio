@@ -1,25 +1,51 @@
 import React from "react";
-import logo from "../assets/logo.jpeg";
-import { Navbar, Nav } from "react-bootstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
   return (
-    <div>
-      <Navbar id="navbar" className="navbar fixed-top navbar-light ">
-        <img src={logo} id="logo" className="d-inline-block align-top" alt="" />
-        <Navbar.Brand href="#about-me">Uri Rubin</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#about-me">About me</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+    <div className="navbar">
+      <Link
+        activeClass="active"
+        to="landing-page"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={1000}
+      >
+        Home
+      </Link>
+      <Link
+        activeClass="active"
+        to="aboutMe-container"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={700}
+      >
+        About
+      </Link>
+      <Link
+        activeClass="active"
+        to="projects-container"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={700}
+      >
+        Projects
+      </Link>
+      <Link
+        activeClass="active"
+        to="contact-container"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={700}
+      >
+        Contact
+      </Link>    
     </div>
   );
 }
 
 export default Header;
-

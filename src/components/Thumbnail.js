@@ -3,12 +3,12 @@ import github from "../assets/github.png";
 
 const Thumbnail = ({ reading }) => {
   return (
-    <div className="card m-3" style={{ width: "22rem", mrgin: "0 auto" }}>
+    <div className="card m-3" >
       <div className="img-hover-zoom">
-        <img src={reading.image} style={{ width: "100%" }} alt="Project " />
+        <img src={reading.image} style={{ width: "100%" }} alt="" />
       </div>
       <div className="card-body">
-        <h5 className="card-header" style={{ background: "cadetblue", borderRadius:"5px" }}>
+        <h5 className="card-header" style={{ background: "#24C6DC", borderRadius:"5px" }}>
           {reading.title}
         </h5>
         <p className="text-muted pb-2 pt-2">{reading.category}</p>

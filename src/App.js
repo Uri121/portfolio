@@ -6,22 +6,24 @@ import Contact from "./components/Contact.js";
 import AboutMe from "./components/AboutMe.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 function App() {
   return (
     <div className="App">
-      <Header />
+    <Header/>
+    <div className="landing-page">
+        <h1> Uri Rubin </h1>
+        <h6>Software Developer</h6>
+      </div>
       <div className="container">
-        <div className="box-1" id="about-me">
+        <div className="aboutMe-container">
           <AboutMe />
         </div>
-        <div className="box-2" id="projects">
-        <h2 className="display-4 text-center" style={{color:'cadetblue'}}>Check out some of my work</h2>
+        <div className="projects-container">
           <Project />
         </div>
-        <div className="box-3" id="contact">
-          <Contact />
-        </div>
+          <div className="contact-container">
+            <Contact />
+          </div>
       </div>
     </div>
   );
