@@ -8,7 +8,7 @@ function AboutMe(props) {
     <div>
       <div className="about-me">
         <img src={image} alt="" />
-        <p>
+        <p className="about-p">
           Hi, I'm Uri, software developer who loves to transform ideas into
           reality using code.<br></br> I recently completed a bachelor's degree
           in Computer Science, I enjoy being challenged and engaging with

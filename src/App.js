@@ -25,6 +25,11 @@ function App() {
             <Contact />
           </div>
       </div>
+      <div id="footer" className="page-footer">
+        <div className="container-fluid text-center py-5">
+        <h5 className="pt-4">2019 &copy; Copyright <strong>Uri Rubin</strong>. All Rights Reserved</h5>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link  } from "react-scroll";
+import  ScrollUpButton from "react-scroll-up-button";
 
 function Header() {
   return (
     <div className="navbar">
-      <Link
+      <Link className="my-nav-item"
         activeClass="active"
         to="landing-page"
         spy={true}
@@ -14,7 +15,7 @@ function Header() {
       >
         Home
       </Link>
-      <Link
+      <Link className="my-nav-item"
         activeClass="active"
         to="aboutMe-container"
         spy={true}
@@ -24,7 +25,7 @@ function Header() {
       >
         About
       </Link>
-      <Link
+      <Link className="my-nav-item"
         activeClass="active"
         to="projects-container"
         spy={true}
@@ -34,7 +35,7 @@ function Header() {
       >
         Projects
       </Link>
-      <Link
+      <Link className="my-nav-item"
         activeClass="active"
         to="contact-container"
         spy={true}
@@ -43,7 +44,17 @@ function Header() {
         duration={700}
       >
         Contact
-      </Link>    
+      </Link>   
+      <ScrollUpButton
+      StopPosition={0}
+      ShowAtPosition={150}
+      EasingType='easeOutCubic'
+      AnimationDuration={2000}
+      ContainerClassName='ScrollUpButton__Container'
+      TransitionClassName='ScrollUpButton__Toggled'
+      style={{}}
+      ToggledStyle={{}}
+    />
     </div>
   );
 }

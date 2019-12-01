@@ -22,7 +22,6 @@ const Thumbnail = ({ reading }) => {
             src={github}
             alt="git logo"
             id="git-logo"
-            style={{ width: "38px" }}
           ></img>
         </a>
       </div>

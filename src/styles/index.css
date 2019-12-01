@@ -139,10 +139,14 @@ a{
 
 .card {
   text-align: center;
-  width: 350px;
-  border-radius: 13%;
+  width: 400px;
+  border-radius:  20px;
   overflow: hidden;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card a img{
+  width: 38px;
 }
 
 /* projects section end */
@@ -153,11 +157,10 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 .form-style-6{
-	font: 95% Arial, Helvetica, sans-serif;
-	max-width: 400px;
+  width: 80%;
 	margin: 10px auto;
 	padding: 16px;
 	background: #F7F7F7;
@@ -168,24 +171,14 @@ a{
 	font-size: 140%;
 	font-weight: 300;
 	text-align: center;
-	color: #fff;
 	margin: -16px -16px 16px -16px;
 }
+
 .form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
 .form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
 .form-style-6 textarea,
 .form-style-6 select 
 {
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -196,16 +189,10 @@ a{
 	border: 1px solid #ccc;
 	padding: 3%;
 	color: #555;
-	font: 95% Arial, Helvetica, sans-serif;
 }
 .form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
+
 .form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus
 {
@@ -226,76 +213,289 @@ a{
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;	
-	color: #fff;
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-	background: #2EBC99;
+	background: #1F7FC3;
 }
-/* contact section start */
+/* contact section end */
 
-
-
-
-/* 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 70px;
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
   
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .landing-page h1 {
+    font-family: fantasy, serif;
+    font-size: 7rem;
+    background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .landing-page h6 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #24C6DC;
+  }
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .about-me{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-p{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  p{
+    font-size: large;
+  }
+  
+  .row{
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about-me img{
+    width: 250px;
+    border-radius: 3%;
+    margin: .81rem;
+  }
+  .my-progress{
+    margin: .30rem;
+  }
+  
+  .my-skils-card {
+    font-size: large;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: start;
+    border-radius: 20px;
+    width: 80%;
+    padding: 1%;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: large;
+    color: black;
+   }
+  
+   #logo-link:hover{
+    background-color: #24C6DC;
+    transform: scale(1.);
+    overflow: hidden;
+   }
+
+
+  .projects-container h2{
+    color:  #24C6DC;
+  }
+    
+  .card {
+    text-align: center;
+    font-size: large;
+    width: 600px;
+    border-radius:  20px;
+    overflow: hidden;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .card-header{
+    font-size: large;
+  }
+  .card a{
+    width: 150px;
+    font-size: large;
+  }
+  .card a img{
+    width: 38px;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .form-style-6{
+    font-size: xx-large;
+    width: 70%;
+
+    background: #F7F7F7;
+  }
+  .form-style-6 h1{
+    background: #24C6DC;
+    margin: -16px -16px 16px -16px;
+  }
+
 }
 
-.my-card-about-me {
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  text-align: start;
-  border-radius: 20px;
-  width: 80%;
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: x-large;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .landing-page h1 {
+      font-family: fantasy, serif;
+      font-size: 10rem;
+      background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .landing-page h6 {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #24C6DC;
+    }
+    .landing-page {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .about-me{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-p{
+      color: white;
+      font-weight: bold;
+      font-size: medium;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    p{
+      font-size: small;
+    }
+    
+    .row{
+      margin: 1%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .about-me img{
+      width: 110px;
+      border-radius: 3%;
+      margin: .81rem;
+    }
+    .my-progress{
+      margin: .30rem;
+    }
+    
+    .my-skils-card {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: black;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      text-align: start;
+      border-radius: 20px;
+      width: 60%;
+      padding: 1%;
+    }
+    
+    .card-title {
+      text-align: center;
+      font-size: medium;
+      color: black;
+     }
+    
+     #logo-link:hover{
+      background-color: #24C6DC;
+      transform: scale(1.);
+      overflow: hidden;
+     }
+
+
+    .projects-container h2{
+      font-size: x-large;
+      color:  #24C6DC;
+    }
+      
+    .card {
+      text-align: center;
+      font-size: small;
+      width: 300px;
+      border-radius:  20px;
+      overflow: hidden;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .card-header{
+      font-size: small;
+    }
+    .card a{
+      width: 100px;
+      font-size: smaller;
+    }
+    .card a img{
+      width: 30px;
+    }
+
+    .contact-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .form-style-6{
+      font-size: small;
+      width: 40%;
+
+      background: #F7F7F7;
+    }
+    .form-style-6 h1{
+      background: #24C6DC;
+      margin: -16px -16px 16px -16px;
+    }
+
 }
 
 
-.my-card-contact{
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  text-align: start;
-  border-radius: 20px;
-  width: 60%;
-}
-.card-title-contact{
-  text-align: center;
-  background-color: aqua;
-  border-radius: 20px;
-  width: 75%;
-  margin: 0 auto;
-}
 
 
-
-.card:hover {
-  box-shadow: 0 0 50px cadetblue;
-}
-.my-card-skils:hover{
-  box-shadow: 0 0 50px cadetblue;
-}
-
-.my-progress{
-  padding: 1.25rem 1.25rem;
-  text-align: start;
-  margin: 0 auto;
- 
-}
-
-.progress-bar{
-  background: cadetblue;
-}
-
-.progress{
-    height: 20%;
-}
- */
