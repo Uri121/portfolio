@@ -9,7 +9,7 @@ function AboutMe(props) {
       <div className="about-me">
         <img src={image} alt="" />
         <p className="about-p">
-          Hi, I'm Uri, software developer who loves to transform ideas into
+          Hi, I'm Uri, Software Developer who loves to transform ideas into
           reality using code.<br></br> I recently completed a bachelor's degree
           in Computer Science, I enjoy being challenged and engaging with
           projects that require me to work outside my comfort and knowledge set.

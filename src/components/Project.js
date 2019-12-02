@@ -2,6 +2,7 @@ import React from "react";
 import Thumbnail from "./Thumbnail";
 import weaterIcon from "../assets/weather-app.png";
 import todo from "../assets/todo-list.png";
+import checkers from "../assets/checkers.png";
 
 function Project() {
   return (
@@ -16,9 +17,11 @@ function Project() {
 
 function formatProjects() {
   const weatherDis =
-    "A simple weather app developed with react. you can enter the city or get your location via geolocation";
+    "Weather app developed with React. you can enter the city or get your location via geolocation";
   const todoDis =
-    "A simple todo list app developed with react. you can add items to the list and delete them by clicking on the item";
+    "Todo list app developed with React. you can add items to the list and delete them by clicking on the item";
+    const checkersDis =
+    "Checkers game developed with C#. game with 3 diffrent board sizes and option to play against the PC";
 
   const projects = [
     {
@@ -36,6 +39,14 @@ function formatProjects() {
       category: "React",
       discription: todoDis,
       link: "https://github.com/Uri121/todo-list"
+    },
+    {
+      homePage: "#",
+      title: "Checkers",
+      image: checkers,
+      category: "C#",
+      discription: checkersDis,
+      link: "https://github.com/Uri121/checkers"
     }
   ];
   return projects.map((reading, index) => (

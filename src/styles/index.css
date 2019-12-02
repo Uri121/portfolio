@@ -7,6 +7,7 @@ body {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Bradley Hand, cursive
 }
 p{
   font-size: x-large;
@@ -21,11 +22,13 @@ p{
   -webkit-text-fill-color: transparent;
   margin-top: 3rem;
 }
+
 .landing-page h6 {
   font-size: 3rem;
   font-weight: 300;
   color: #24C6DC;
 }
+
 .landing-page {
   display: flex;
   justify-content: center;
@@ -34,6 +37,7 @@ p{
   align-items: center;
   height: 100vh;
 }
+
 /* end landing page */
 
 /* navbar start */
@@ -64,14 +68,15 @@ a{
   align-items: center;
 }
 .about-me{
-  color: white;
-  font-weight: bolder;
-  font-size: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about-p{
+  color: white;
+  font-size: x-large;
 }
 
 .row{
@@ -88,7 +93,6 @@ a{
 }
 
 .my-skils-card {
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   word-wrap: break-word;
   background-color: #fff;
@@ -126,6 +130,7 @@ a{
 }
 
 .img-hover-zoom {
+  height: 150px;
   overflow: hidden;
 }
 
@@ -139,15 +144,22 @@ a{
 
 .card {
   text-align: center;
-  width: 400px;
+  width: 300px;
+  height: 440px;
   border-radius:  20px;
+  word-wrap: none;
   overflow: hidden;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 
 .card a img{
   width: 38px;
 }
+
+ .card-text{
+  font-size: large;
+  text-align: start;
+} 
 
 /* projects section end */
 
@@ -225,13 +237,28 @@ a{
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg") no-repeat fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Bradley Hand, cursive
+  }
+
+  .navbar {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #24C6DC;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    justify-content: start;
+    z-index: 500;
   }
 
   .landing-page h1 {
-    font-family: fantasy, serif;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 7rem;
     background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
     -webkit-background-clip: text;
@@ -259,9 +286,7 @@ a{
 
   .about-p{
     color: white;
-    font-weight: bold;
     font-size: x-large;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   p{
@@ -286,7 +311,6 @@ a{
   
   .my-skils-card {
     font-size: large;
-    font-family: Georgia, "Times New Roman", Times, serif;
     color: black;
     word-wrap: break-word;
     background-color: #fff;
@@ -304,6 +328,7 @@ a{
     color: black;
    }
   
+
    #logo-link:hover{
     background-color: #24C6DC;
     transform: scale(1.);
@@ -321,7 +346,6 @@ a{
     width: 600px;
     border-radius:  20px;
     overflow: hidden;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .card-header{
     font-size: large;
@@ -329,6 +353,11 @@ a{
   .card a{
     width: 150px;
     font-size: large;
+  }
+  
+  .img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
   }
   .card a img{
     width: 38px;
@@ -361,28 +390,29 @@ a{
   and (-webkit-min-device-pixel-ratio: 1) { 
 
     body {
-      margin: 0;
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: x-large;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg") no-repeat;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Bradley Hand, cursive
     }
 
-    .landing-page h1 {
+    .navbar {
       font-family: fantasy, serif;
-      font-size: 10rem;
-      background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-color: #24C6DC;
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+      justify-content: start;
+      align-items: baseline;
+      z-index: 500;
     }
-    .landing-page h6 {
-      font-size: 2rem;
-      font-weight: 300;
-      color: #24C6DC;
-    }
+
     .landing-page {
       display: flex;
       justify-content: center;
@@ -392,6 +422,20 @@ a{
       height: 100vh;
     }
 
+    .landing-page h1 {
+      font-family: fantasy, serif;
+      font-size: 8rem;
+      background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .landing-page h6 {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #24C6DC;
+    }
+    
     .about-me{
       flex-direction: row;
       justify-content: center;
@@ -400,11 +444,9 @@ a{
 
     .about-p{
       color: white;
-      font-weight: bold;
-      font-size: medium;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: large;
     }
-
+ 
     p{
       font-size: small;
     }
@@ -426,7 +468,6 @@ a{
     }
     
     .my-skils-card {
-      font-family: Georgia, "Times New Roman", Times, serif;
       color: black;
       word-wrap: break-word;
       background-color: #fff;
@@ -460,17 +501,25 @@ a{
       text-align: center;
       font-size: small;
       width: 300px;
+      height: 440px;
       border-radius:  20px;
       overflow: hidden;
-      font-family: Georgia, "Times New Roman", Times, serif;
     }
+
     .card-header{
-      font-size: small;
+      font-size: medium;
     }
+
     .card a{
       width: 100px;
       font-size: smaller;
     }
+
+    .img-hover-zoom {
+      height: 300px;
+      overflow: hidden;
+    }
+
     .card a img{
       width: 30px;
     }
@@ -486,14 +535,13 @@ a{
     .form-style-6{
       font-size: small;
       width: 40%;
-
       background: #F7F7F7;
     }
+
     .form-style-6 h1{
       background: #24C6DC;
       margin: -16px -16px 16px -16px;
     }
-
 }
 
 
