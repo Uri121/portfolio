@@ -67,3 +67,10 @@
       background: #1F7FC3;
   }
   /* contact section end */
+
+  @media (max-width: 768px){
+    .my-form{
+        width: 100%;
+        
+      }
+  }

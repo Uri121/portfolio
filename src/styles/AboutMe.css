@@ -34,12 +34,15 @@
     color: white;
     font-size: x-large;
   }
-.logos-container{
-  flex-basis: 200px;
-}
+  
+  .row{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
   .skils-container{
-    margin-top: 26;
+    margin-top: 26px;
     margin-left: 26px;
     width: 40%;
   }
@@ -78,8 +81,7 @@
 
 
   @media (max-width: 768px){
-
-
+    
     .landing-page h1{
       font-size: 4rem;
     }
@@ -110,6 +112,12 @@
     .card-title {
       font-size: x-large;
      }
+
+     .skils-container{
+      margin-top: 26px;
+      margin-left: 26px;
+      width: 100%;
+    }
  
 
   }
