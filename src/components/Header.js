@@ -1,8 +1,10 @@
 import React from "react";
 import { Link  } from "react-scroll";
 import  ScrollUpButton from "react-scroll-up-button";
+import Up from "../assets/up-arrow.png";
 
 function Header() {
+
   return (
     <div className="navbar">
       <Link className="my-nav-item"
@@ -44,19 +46,11 @@ function Header() {
         duration={700}
       >
         Contact
-      </Link>   
-      <ScrollUpButton
-      StopPosition={0}
-      ShowAtPosition={150}
-      EasingType='easeOutCubic'
-      AnimationDuration={2000}
-      ContainerClassName='ScrollUpButton__Container'
-      TransitionClassName='ScrollUpButton__Toggled'
-      style={{}}
-      ToggledStyle={{}}
-    />
+      </Link>    
+      <ScrollUpButton></ScrollUpButton>
     </div>
   );
 }
 
 export default Header;
+

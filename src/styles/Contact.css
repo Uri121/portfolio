@@ -1,0 +1,69 @@
+/* contact section start */
+
+.my-form-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .my-form{
+    width: 60%;
+      margin: 10px auto;
+      padding: 16px;
+      background: #F7F7F7;
+  }
+  .my-form h1{
+      background: #24C6DC;
+      padding: 20px 0;
+      font-size: xx-large;
+      text-align: center;
+      margin: -16px -16px 16px -16px;
+  }
+  
+  .my-form input[type="text"],
+  .my-form input[type="email"],
+  .my-form textarea,
+  .my-form select 
+  {
+      outline: none;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      background: #fff;
+      margin-bottom: 4%;
+      border: 1px solid #ccc;
+      padding: 3%;
+      color: #555;
+  }
+  .my-form input[type="text"]:focus,
+  
+  .my-form input[type="email"]:focus,
+  .my-form textarea:focus,
+  .my-form select:focus
+  {
+      box-shadow: 0 0 5px #24C6DC;
+      padding: 3%;
+      border: 1px solid #24C6DC;
+  }
+  
+  .my-form input[type="submit"],
+  .my-form input[type="button"]{
+      font-size: x-large;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      padding: 3%;
+      background: #24C6DC;
+      border-bottom: 2px solid #30C29E;
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;	
+  }
+  .my-form input[type="submit"]:hover,
+  .my-form input[type="button"]:hover{
+      background: #1F7FC3;
+  }
+  /* contact section end */

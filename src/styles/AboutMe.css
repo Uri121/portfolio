@@ -1,0 +1,114 @@
+
+.landing-page h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10rem;
+  background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-page h6 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #24C6DC;
+}
+.landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* about me section start */
+  .about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-p{
+    color: white;
+    font-size: x-large;
+  }
+  
+  .row{
+    margin-top: 68px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+  .about-me img{
+    width: 200px;
+    border-radius: 13px;
+    margin: .81rem;
+  }
+  
+  .my-skils-card {
+    color: black;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: start;
+    border-radius: 20px;
+    width: 60%;
+    padding: 1%;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: large;
+    color: black;
+   }
+  
+   #logo-link:hover{
+    background-color: #24C6DC;
+    transform: scale(1.2);
+    overflow: hidden;
+   }
+  /* about me section ends */
+
+
+  @media (max-width: 768px){
+
+
+    .landing-page h1{
+      font-size: 5rem;
+    }
+    .landing-page h6{
+      font-weight: 0;
+      font-size: 1.3rem;
+    }
+
+    .about-me{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 220vh;
+    }
+
+    .about-me-imgs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .my-skils-card{
+      width: 80%;
+      font-size: large;
+    }
+
+    .card-title {
+      font-size: x-large;
+     }
+ 
+
+  }

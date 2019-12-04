@@ -1,0 +1,20 @@
+.toggle-button div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.open .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .line2 {
+  opacity: 0;
+}
+
+.open .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

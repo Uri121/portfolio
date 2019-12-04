@@ -3,11 +3,12 @@ import Thumbnail from "./Thumbnail";
 import weaterIcon from "../assets/weather-app.png";
 import todo from "../assets/todo-list.png";
 import checkers from "../assets/checkers.png";
+import "../styles/Project.css";
 
 function Project() {
   return (
     <div className="projects">
-      <h2 className="display-4 text-center">Check out some of my work</h2>
+      <h2 className="display-4 text-center" style={{color:"#24C6DC"}}>Check out some of my work</h2>
       <div className="row">
         {formatProjects()}
       </div>
@@ -20,7 +21,7 @@ function formatProjects() {
     "Weather app developed with React. you can enter the city or get your location via geolocation";
   const todoDis =
     "Todo list app developed with React. you can add items to the list and delete them by clicking on the item";
-    const checkersDis =
+  const checkersDis =
     "Checkers game developed with C#. game with 3 diffrent board sizes and option to play against the PC";
 
   const projects = [

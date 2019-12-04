@@ -1,0 +1,49 @@
+.side-drawer {
+  height: 100%;
+  top: 0;
+  width: 50%;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0.5);
+  position: fixed;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #24c6dc;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in;
+}
+
+.side-drawer.open{
+  transform: translateX(0);
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-drawer li {
+  font-size: x-large;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  color: white;
+}
+
+#link.fire{
+  border-bottom: 4px solid wheat;
+  color: wheat;
+}
+
+#link:hover{
+  color: wheat;
+}
+
+
+@media (min-width: 769px){
+  .side-drawer{
+    display: none;
+  }
+}
+
