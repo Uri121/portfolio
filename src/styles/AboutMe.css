@@ -1,6 +1,6 @@
 
 .landing-page h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, sans-serif;
   font-size: 10rem;
   background: -webkit-linear-gradient(#2BC0E4, #EAECC6);
   -webkit-background-clip: text;
@@ -25,7 +25,7 @@
   .about-me{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
   }
@@ -34,13 +34,14 @@
     color: white;
     font-size: x-large;
   }
-  
-  .row{
-    margin-top: 68px;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+.logos-container{
+  flex-basis: 200px;
+}
+
+  .skils-container{
+    margin-top: 26;
+    margin-left: 26px;
+    width: 40%;
   }
 
   
@@ -58,7 +59,7 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     text-align: start;
     border-radius: 20px;
-    width: 60%;
+    width: 100%;
     padding: 1%;
   }
   
@@ -80,7 +81,7 @@
 
 
     .landing-page h1{
-      font-size: 5rem;
+      font-size: 4rem;
     }
     .landing-page h6{
       font-weight: 0;

@@ -9,18 +9,7 @@ function AboutMe(props) {
     <div className="about-me">
       <div className="about-me-imgs">
         <img src={image} alt="" />
-        <div className="d-flex flex-row">
-        <a
-          id="logo-link"
-          className="ml-2"
-          href="https://www.linkedin.com/in/uri-rubin-53a144144/"
-        >
-          <img src={linkedin} style={{ width: "35px" }} alt="" />
-        </a>
-        <a id="logo-link" href="https://github.com/Uri121?tab=repositories">
-          <img src={git} style={{ width: "35px" }} alt="" />
-        </a>
-      </div>
+
         <p className="about-p">
           Hi, I'm Uri, Software Developer who loves to transform ideas into
           reality using code.<br></br> I recently completed a bachelor's degree
@@ -32,7 +21,7 @@ function AboutMe(props) {
       </div>
     
 
-      <div className="row">
+      <div className="skils-container">
         <div className="my-skils-card">
           <div className="card-title">Skils</div>
           <div className="card-body">
@@ -134,3 +123,17 @@ function AboutMe(props) {
 }
 
 export default AboutMe;
+
+
+        /* <div className="logos-container">
+        <a
+          id="logo-link"
+          className="ml-2"
+          href="https://www.linkedin.com/in/uri-rubin-53a144144/"
+        >
+          <img src={linkedin} style={{ width: "35px" }} alt="" />
+        </a>
+        <a id="logo-link" href="https://github.com/Uri121?tab=repositories">
+          <img src={git} style={{ width: "35px" }} alt="" />
+        </a>
+      </div> */
