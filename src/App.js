@@ -35,7 +35,7 @@ class App extends Component {
           <AboutMe />
           <Project/>
           <Contact/>
-          <ScrollUpButton AnimationDuration={2000}/>
+          <ScrollUpButton  style={{borderRadius:'30%'}} AnimationDuration={2000}/>
       </div>
       </div>
     );

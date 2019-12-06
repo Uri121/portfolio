@@ -7,12 +7,6 @@
   height: 100vh;
 }
 
-.scrolling-wrapper-flexbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .img-hover-zoom {
   height: 150px;
   overflow: hidden;
@@ -61,5 +55,35 @@
   .card {
     text-align: center;
     width: 330px;
+  }
+}
+
+@media (max-width: 360px){
+  .projects {
+    height: 390vh;
+  }
+  .projects h2{
+    font-size: x-large!important;
+  }
+  .card-text {
+    font-size: medium;
+    text-align: start;
+  }
+
+  .card-header{
+    font-size: medium;
+  }
+
+  .row{
+    width: 120%;
+  }
+
+  .btn{
+    margin-bottom: 0.3rem;
+    font-size: small;
+  }
+
+  .card a img {
+    width: 35px;
   }
 }

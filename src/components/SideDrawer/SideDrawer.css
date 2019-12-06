@@ -47,3 +47,9 @@
   }
 }
 
+@media (max-width: 768px){
+  .side-drawer li{
+    margin-right: 37px ;
+  }
+}
+
