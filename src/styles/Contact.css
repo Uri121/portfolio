@@ -75,6 +75,10 @@
 }
 @media (max-width: 360px) {
   .my-form-container {
-    height: 150vh;
+    height: 160vh;
+  }
+
+  #footer{
+    margin-top: 25px;
   }
 }

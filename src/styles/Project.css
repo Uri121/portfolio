@@ -60,7 +60,7 @@
 
 @media (max-width: 360px){
   .projects {
-    height: 390vh;
+    height: 300vh;
   }
   .projects h2{
     font-size: x-large!important;
