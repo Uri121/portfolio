@@ -8,7 +8,7 @@ import "../styles/Project.css";
 function Project() {
   return (
     <div className="projects">
-      <h2 className="display-5 text-center" style={{color:"#24C6DC"}}>Check out some of my work</h2>
+      <h2 className="display-5 text-center" style={{color:"wheat"}}>Check out some of my work</h2>
       <div className="row">
         {formatProjects()}
       </div>

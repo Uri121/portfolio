@@ -10,7 +10,7 @@ const Thumbnail = ({ reading }) => {
         <div className="card-body">
           <h5
             className="card-header"
-            style={{ background: "#24C6DC", borderRadius: "5px" }}
+            style={{ background: "wheat", borderRadius: "5px" }}
           >
             {reading.title}
           </h5>

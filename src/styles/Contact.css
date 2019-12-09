@@ -15,7 +15,7 @@
   background: #f7f7f7;
 }
 .my-form h1 {
-  background: #24c6dc;
+  background: wheat;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 20px 0;
@@ -43,9 +43,9 @@
 .my-form input[type="email"]:focus,
 .my-form textarea:focus,
 .my-form select:focus {
-  box-shadow: 0 0 5px #24c6dc;
+  box-shadow: 0 0 5px wheat;
   padding: 3%;
-  border: 1px solid #24c6dc;
+  border: 1px solid wheat;
 }
 
 .my-form input[type="submit"],
@@ -56,15 +56,15 @@
   -moz-box-sizing: border-box;
   width: 100%;
   padding: 1%;
-  background: #24c6dc;
-  border-bottom: 2px solid #30c29e;
+  background: wheat;
+  border-bottom: 2px solid wheat;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
 }
 .my-form input[type="submit"]:hover,
 .my-form input[type="button"]:hover {
-  background: #1f7fc3;
+  background: #dfa168;
 }
 /* contact section end */
 
