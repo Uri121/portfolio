@@ -66,10 +66,7 @@
   color: #24c6dc;
 }
 .landing-page {
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -185,17 +182,19 @@
 
 @media (max-width: 360px) {
 
+  .landing-page{
+    height: 150vh;
+  }
   .landing-page h6 {
     font-weight: 0;
     font-size: 1rem;
   }
-
   .container {
     width: 80%;
   }
 
   .about-me {
-    height: 210vh;
+    height: 220vh;
   }
 
   .about-p {

@@ -209,11 +209,15 @@
   #git-logo:hover{
     transform: scale(1);
   }
+  .project-item .caption .caption-content {
+    color: #fff;
+    margin: 0.5rem 2rem;
+  }
 }
 
 @media (max-width: 360px){
   .projects {
-    height: 180vh;
+    height: 250vh;
   }
   .img-fluid{
     height: 180px!important;
