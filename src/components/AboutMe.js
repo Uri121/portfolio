@@ -1,32 +1,15 @@
 import React from "react";
 import image from "../assets/logo.jpeg";
-import linkedin from "../assets/linkedin.png";
-import git from "../assets/github.png";
-import "../styles/AboutMe.css";
-import cv from "../assets/cv.pdf";
-import resume from "../assets/resume.png";
 
-function AboutMe(props) {
+import "../styles/AboutMe.css";
+
+
+const AboutMe = (props) => {
   return (
+    <div className="container">
     <div className="about-me">
       <div className="about-me-imgs">
         <img src={image} alt="" />
-        <div className="logos-card">
-        <div className="d-flex flex-row">
-         
-        <a
-          id="logo-link"
-          className="ml-2"
-          href="https://www.linkedin.com/in/uri-rubin-53a144144/"
-        >
-          <img src={linkedin} style={{ width: "35px" }} alt="" />
-        </a>
-        <a id="logo-link" href="https://github.com/Uri121?tab=repositories">
-          <img src={git} style={{ width: "35px" }} alt="" />
-        </a>
-        <a id="logo-link"href = {cv} target = "_blank" rel="noopener noreferrer"><img src={resume} style={{ width: "35px" }} alt="" /></a>
-        </div>
-      </div>
         <p className="about-p">
           Hi, I'm Uri, Software Developer who loves to transform ideas into
           reality using code.<br></br> I recently completed a bachelor's degree
@@ -135,6 +118,7 @@ function AboutMe(props) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

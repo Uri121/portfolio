@@ -1,34 +1,28 @@
 import React from "react";
-import github from "../assets/github.png";
 
 const Thumbnail = ({ reading }) => {
   return (
-      <div className="card m-3">
-        <div className="img-hover-zoom">
-          <img src={reading.image} style={{ width: "100%" }} alt="" />
-        </div>
-        <div className="card-body">
-          <h5
-            className="card-header"
-            style={{ background: "wheat", borderRadius: "5px" }}
-          >
-            {reading.title}
-          </h5>
-          <p className="text-muted pb-2 pt-2">{reading.category}</p>
-          <p className="card-text">{reading.discription}</p>
-
-          <a
-            href={reading.homePage}
-            className="btn btn-primary mr-5"
-            id="button"
-          >
-            Check me out
-          </a>
-          <a href={reading.link}>
-            <img src={github} alt="git logo" id="git-logo"></img>
-          </a>
-        </div>
+    <div className="col-lg-6">
+      <div className="project-item">
+        <span className="caption">
+          <span className="caption-content">
+            <h2>{reading.title}</h2>
+            <p className="mb-0">{reading.discription}</p>
+            <div className="project-footer">
+              <a
+                href={reading.homePage}
+                className="btn btn-primary"
+                id="button"
+              >
+                Check me out
+              </a>
+              <a href={reading.link}><button id="git-logo"></button></a>
+            </div>
+          </span>
+        </span>
+        <img className="img-fluid" src={reading.image} alt="" />
       </div>
+    </div>
   );
 };
 

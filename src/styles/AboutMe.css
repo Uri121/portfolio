@@ -1,17 +1,73 @@
-.landing-page h1 {
-  font-family: Impact, sans-serif;
-  font-size: 10rem;
-  background: -webkit-linear-gradient(#2bc0e4, #eaecc6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#svg-name {
+  margin-bottom: 2rem;
+  animation: fill 0.5s ease forwards 4s;
+}
+
+#svg-name path:nth-child(1) {
+  stroke-dasharray: 530;
+  stroke-dashoffset: 530;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#svg-name path:nth-child(2) {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#svg-name path:nth-child(3) {
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#svg-name path:nth-child(4) {
+  stroke-dasharray: 470;
+  stroke-dashoffset: 470;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#svg-name path:nth-child(5) {
+  stroke-dasharray: 477;
+  stroke-dashoffset: 477;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#svg-name path:nth-child(6) {
+  stroke-dasharray: 364;
+  stroke-dashoffset: 364;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#svg-name path:nth-child(7) {
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+#svg-name path:nth-child(8) {
+  stroke-dasharray: 478;
+  stroke-dashoffset: 478;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: url(#gradient);
+  }
 }
 
 .landing-page h6 {
   font-size: 2rem;
   font-weight: 300;
+  z-index: 100;
   color: #24c6dc;
 }
 .landing-page {
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,37 +85,36 @@
   height: 100vh;
 }
 
+.about-me-imgs {
+  margin-left: 2%;
+}
+
 .about-p {
   color: white;
   font-size: x-large;
 }
 
-.row {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .skils-container {
   margin-top: 26px;
   margin-left: 26px;
-  width: 40%;
+  flex-basis: 45%;
 }
 
 .about-me img {
   width: 200px;
   border-radius: 13px;
-  margin: 0.81rem;
+  margin-bottom: 0.81rem;
 }
 
 .my-skils-card {
   color: black;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #24c6dc;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   text-align: start;
   border-radius: 20px;
+  box-shadow: 10px 10px 5px grey;
   width: 100%;
   padding: 1%;
 }
@@ -69,38 +124,36 @@
   font-size: large;
   color: black;
 }
-
-.logos-card{
-  background-color:wheat;
-  background-clip: border-box;
-  border-radius: 20px;
-  padding: 1%;
-  margin-bottom: 5px;
-  width: fit-content;
+.progress-bar {
+  background-color: wheat;
+  color: black;
 }
 
-#logo-link:hover {
-  transform: scale(1.2);
-  overflow: hidden;
-}
 /* about me section ends */
 
 @media (max-width: 768px) {
-  .landing-page h1 {
-    font-size: 4rem;
+  #svg-name{
+    width: 300px;
+    height: 70px;
   }
   .landing-page h6 {
     font-weight: 0;
     font-size: 1.3rem;
   }
+  .landing-page {
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+  }
 
   .about-me {
-    margin-left: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 220vh;
+    height: 190vh;
   }
 
   .about-p {
@@ -126,24 +179,23 @@
   .skils-container {
     margin-top: 26px;
     margin-left: 26px;
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media (max-width: 360px) {
-  .landing-page {
-    height: 100vh;
-  }
-  .landing-page h1 {
-    font-size: 3rem;
-  }
+
   .landing-page h6 {
     font-weight: 0;
     font-size: 1rem;
   }
 
+  .container {
+    width: 80%;
+  }
+
   .about-me {
-    height: 200vh;
+    height: 210vh;
   }
 
   .about-p {
@@ -167,6 +219,15 @@
   .skils-container {
     margin-top: 26px;
     margin-left: 0px;
-    width: 100%;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .about-me {
+    height: 130vh;
+  }
+  .skils-container {
+    flex-basis: 60%;
   }
 }

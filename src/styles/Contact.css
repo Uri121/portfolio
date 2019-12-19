@@ -8,14 +8,15 @@
   flex-direction: column;
 }
 .my-form {
-  width: 60%;
+  width: 40%;
   border-radius: 20px;
-  margin: 10px auto;
+  margin-top: 10rem;
   padding: 16px;
-  background: #f7f7f7;
+  border: 1px solid#24c6dc;
+  background: #fff3e6;
 }
 .my-form h1 {
-  background: wheat;
+  background: #24c6dc;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 20px 0;
@@ -33,19 +34,21 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 100%;
-  background: #fff;
+  background: #fff3e6;
   margin-bottom: 4%;
   border: 1px solid #ccc;
   padding: 3%;
-  color: #555;
+  border-radius: 20px;
+  color: #24c6dc;
 }
 .my-form input[type="text"]:focus,
 .my-form input[type="email"]:focus,
 .my-form textarea:focus,
 .my-form select:focus {
-  box-shadow: 0 0 5px wheat;
+  box-shadow: 0 0 5px #24c6dc;
   padding: 3%;
-  border: 1px solid wheat;
+  border: 1px solid #24c6dc;
+  border-radius: 20px;
 }
 
 .my-form input[type="submit"],
@@ -56,29 +59,62 @@
   -moz-box-sizing: border-box;
   width: 100%;
   padding: 1%;
-  background: wheat;
-  border-bottom: 2px solid wheat;
+  background: #24c6dc;
+  border-radius: 20px;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
+
 }
 .my-form input[type="submit"]:hover,
 .my-form input[type="button"]:hover {
-  background: #dfa168;
+  background: wheat;
+  overflow: hidden;
 }
+
+.logos {
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#logo-link{
+  width: 35px;
+
+}
+#logo-link:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  z-index: 1;
+}
+
 /* contact section end */
 
+@media (min-width: 992px) {
+  .my-form-container {
+    height: 130vh;
+      } 
+       .my-form {
+        margin: 0;
+      }
+}
 @media (max-width: 768px) {
   .my-form {
-    width: 100%;
+    width: 60%;
+  }
+  .my-form-container {
+height: 100%;
   }
 }
 @media (max-width: 360px) {
   .my-form-container {
-    height: 160vh;
+    height: 100%;
+      }
+  .my-form {
+    width: 80%;
+    margin-top: 6rem;
   }
 
-  #footer{
-    margin-top: 25px;
-  }
 }
+

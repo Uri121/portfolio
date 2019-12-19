@@ -1,9 +1,8 @@
 import React from "react";
 import { Link  } from "react-scroll";
 import  ScrollUpButton from "react-scroll-up-button";
-import Up from "../assets/up-arrow.png";
 
-function Header() {
+const Header = () => {
 
   return (
     <div className="navbar">

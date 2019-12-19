@@ -2,17 +2,23 @@ import React from "react";
 import Thumbnail from "./Thumbnail";
 import weaterIcon from "../assets/weather-app.png";
 import todo from "../assets/todo-list.png";
-import checkers from "../assets/checkers.png";
+import checkers from "../assets/checkers.jpg";
+import portfolio from "../assets/portfolio.png";
 import "../styles/Project.css";
 
-function Project() {
+const Project=()=> {
   return (
     <div className="projects">
-      <h2 className="display-5 text-center" style={{color:"wheat"}}>Check out some of my work</h2>
-      <div className="row">
+      <div className="spacer">
+      <h2 className="display-5 text-center mb-1" style={{color:"wheat"}}>Recent Projects</h2>
+      </div>
+      <div className="container">
+      <div className="row no-gutters mt-5">
         {formatProjects()}
       </div>
+      </div>   
     </div>
+
   );
 }
 
@@ -20,16 +26,17 @@ function formatProjects() {
   const weatherDis =
     "Weather app developed with React. you can enter the city or get your location via geolocation";
   const todoDis =
-    "Todo list app developed with React. you can add items to the list and delete them by clicking on the item";
+    "Todo list app developed with React. you can add items to the list and delete by clicking on the item";
   const checkersDis =
-    "Checkers game developed with C#. game with 3 diffrent board sizes and option to play against the PC";
+    "Checkers game developed with C#. game with 3 diffrent board sizes, option to play against the PC";
+    const portfolioDis =
+    "Portfolio website developed with React. With respovsive design and clean animations";
 
   const projects = [
     {
       homePage: "https://uri121.github.io/my-weather/",
       title: "Weather App",
       image: weaterIcon,
-      category: "React",
       discription: weatherDis,
       link: "https://github.com/Uri121/my-weather"
     },
@@ -37,7 +44,6 @@ function formatProjects() {
       homePage: "https://uri121.github.io/todo-list/",
       title: "Todo List",
       image: todo,
-      category: "React",
       discription: todoDis,
       link: "https://github.com/Uri121/todo-list"
     },
@@ -45,9 +51,15 @@ function formatProjects() {
       homePage: "#",
       title: "Checkers",
       image: checkers,
-      category: "C#",
       discription: checkersDis,
       link: "https://github.com/Uri121/checkers"
+    },
+    {
+      homePage: "https://uri121.github.io/portfolio/",
+      title: "Portfolio",
+      image: portfolio,
+      discription: portfolioDis,
+      link: "https://github.com/Uri121/portfolio"
     }
   ];
   return projects.map((reading, index) => (
