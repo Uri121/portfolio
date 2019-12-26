@@ -1,34 +1,35 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a057c91f.chunk.css",
-    "main.js": "/portfolio/static/js/main.4ee9d5d0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4ee9d5d0.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d8920061.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d8920061.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ac7687e7.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ac7687e7.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/portfolio/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.01c06c4d.chunk.js": "/portfolio/static/js/2.01c06c4d.chunk.js",
-    "static/js/2.01c06c4d.chunk.js.map": "/portfolio/static/js/2.01c06c4d.chunk.js.map",
+    "static/js/2.c8cdb5be.chunk.js": "/portfolio/static/js/2.c8cdb5be.chunk.js",
+    "static/js/2.c8cdb5be.chunk.js.map": "/portfolio/static/js/2.c8cdb5be.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.859d87effd9bbfa8d63667cfa107268b.js": "/portfolio/precache-manifest.859d87effd9bbfa8d63667cfa107268b.js",
+    "precache-manifest.b371d7fab3d5e4ad47ddbe1c3acb3a37.js": "/portfolio/precache-manifest.b371d7fab3d5e4ad47ddbe1c3acb3a37.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/portfolio/static/css/2.b0bb7f2c.chunk.css.map",
     "static/css/main.a057c91f.chunk.css.map": "/portfolio/static/css/main.a057c91f.chunk.css.map",
     "static/media/index.css": "/portfolio/static/media/about-me.567a4300.jpg",
-    "static/media/checkers.jpg": "/portfolio/static/media/checkers.91bbaf9a.jpg",
+    "static/media/checkers.png": "/portfolio/static/media/checkers.9c879ccd.png",
     "static/media/cv.pdf": "/portfolio/static/media/cv.1e3d8bc8.pdf",
+    "static/media/day-organizer.png": "/portfolio/static/media/day-organizer.15944a35.png",
     "static/media/file-pdf-regular.svg": "/portfolio/static/media/file-pdf-regular.58a1caab.svg",
     "static/media/Project.css": "/portfolio/static/media/github-square-brands.e28d6b65.svg",
     "static/media/linkedin-brands.svg": "/portfolio/static/media/linkedin-brands.fe3b2abb.svg",
     "static/media/logo.jpeg": "/portfolio/static/media/logo.de7ca97b.jpeg",
-    "static/media/portfolio.png": "/portfolio/static/media/portfolio.dd884581.png",
-    "static/media/todo-list.png": "/portfolio/static/media/todo-list.02a3e9be.png",
-    "static/media/weather-app.png": "/portfolio/static/media/weather-app.b84f5e60.png"
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.fbcbbd38.png",
+    "static/media/todo-list.png": "/portfolio/static/media/todo-list.c7f6297c.png",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.6609a6e0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ac7687e7.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.01c06c4d.chunk.js",
+    "static/js/2.c8cdb5be.chunk.js",
     "static/css/main.a057c91f.chunk.css",
-    "static/js/main.4ee9d5d0.chunk.js"
+    "static/js/main.d8920061.chunk.js"
   ]
 }

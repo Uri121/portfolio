@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "502e5d5352c204dae50bc0fe9a76f202",
+    "revision": "124bf65bc1098564eed27c736479c4f8",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "61e9d9b594af2c91dfc3",
+    "revision": "22870104063bcadef41b",
     "url": "/portfolio/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "abad7f782ef8251947d3",
+    "revision": "8ae31c0d71a1436a1d9b",
     "url": "/portfolio/static/css/main.a057c91f.chunk.css"
   },
   {
-    "revision": "61e9d9b594af2c91dfc3",
-    "url": "/portfolio/static/js/2.01c06c4d.chunk.js"
+    "revision": "22870104063bcadef41b",
+    "url": "/portfolio/static/js/2.c8cdb5be.chunk.js"
   },
   {
-    "revision": "abad7f782ef8251947d3",
-    "url": "/portfolio/static/js/main.4ee9d5d0.chunk.js"
+    "revision": "8ae31c0d71a1436a1d9b",
+    "url": "/portfolio/static/js/main.d8920061.chunk.js"
   },
   {
     "revision": "17fd855b9039c0118eb0",
@@ -28,12 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/about-me.567a4300.jpg"
   },
   {
-    "revision": "91bbaf9a6c3ccad35d6dc0ba79a96b39",
-    "url": "/portfolio/static/media/checkers.91bbaf9a.jpg"
+    "revision": "9c879ccd4644932fa3cba9fa26bafa72",
+    "url": "/portfolio/static/media/checkers.9c879ccd.png"
   },
   {
     "revision": "1e3d8bc88a7c924b60d8b31207d3dec3",
     "url": "/portfolio/static/media/cv.1e3d8bc8.pdf"
+  },
+  {
+    "revision": "15944a354614c46db657d007a2a53172",
+    "url": "/portfolio/static/media/day-organizer.15944a35.png"
   },
   {
     "revision": "58a1caabd33ae1e61667774d8792ffec",
@@ -52,15 +56,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/logo.de7ca97b.jpeg"
   },
   {
-    "revision": "dd884581df7b40ee430586c4d4df04c4",
-    "url": "/portfolio/static/media/portfolio.dd884581.png"
+    "revision": "fbcbbd380cccafe7a528f2313962be5a",
+    "url": "/portfolio/static/media/portfolio.fbcbbd38.png"
   },
   {
-    "revision": "02a3e9be80a19b8e6e7e02e982a0b0ca",
-    "url": "/portfolio/static/media/todo-list.02a3e9be.png"
+    "revision": "c7f6297c1b816c3e113a73652b62b066",
+    "url": "/portfolio/static/media/todo-list.c7f6297c.png"
   },
   {
-    "revision": "b84f5e60b68e492326b2efc4f0a64b3d",
-    "url": "/portfolio/static/media/weather-app.b84f5e60.png"
+    "revision": "6609a6e08850f2240f4c788126d61735",
+    "url": "/portfolio/static/media/weather-app.6609a6e0.png"
   }
 ]);
