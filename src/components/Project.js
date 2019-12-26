@@ -2,8 +2,9 @@ import React from "react";
 import Thumbnail from "./Thumbnail";
 import weaterIcon from "../assets/weather-app.png";
 import todo from "../assets/todo-list.png";
-import checkers from "../assets/checkers.jpg";
+import checkers from "../assets/checkers.png";
 import portfolio from "../assets/portfolio.png";
+import dayOrganizer from "../assets/day-organizer.png";
 import "../styles/Project.css";
 
 const Project=()=> {
@@ -31,6 +32,8 @@ function formatProjects() {
     "Checkers game developed with C#. game with 3 diffrent board sizes, option to play against the PC";
     const portfolioDis =
     "Portfolio website developed with React. With respovsive design and clean animations";
+    const dayOrganizerDis =
+    "Day organizer full stack up developed with React Express and mongoDB";
 
   const projects = [
     {
@@ -39,6 +42,13 @@ function formatProjects() {
       image: weaterIcon,
       discription: weatherDis,
       link: "https://github.com/Uri121/my-weather"
+    },
+    {
+      homePage: "https://react-day-organizer.herokuapp.com",
+      title: "Day Organizer",
+      image: dayOrganizer,
+      discription: dayOrganizerDis,
+      link: "https://github.com/Uri121/day-organizer"
     },
     {
       homePage: "https://uri121.github.io/todo-list/",
