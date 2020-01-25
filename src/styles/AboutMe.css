@@ -183,7 +183,11 @@
 @media (max-width: 360px) {
 
   .landing-page{
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: 150vh;
+>>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
   }
   .landing-page h6 {
     font-weight: 0;
@@ -194,7 +198,11 @@
   }
 
   .about-me {
+<<<<<<< HEAD
     height: 200vh;
+=======
+    height: 220vh;
+>>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
   }
 
   .about-p {

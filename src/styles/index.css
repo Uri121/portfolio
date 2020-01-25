@@ -3,7 +3,11 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg") no-repeat fixed;
+=======
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/about-me.jpg");
+>>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Hand, cursive;
