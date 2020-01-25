@@ -247,10 +247,7 @@
 
 @media (max-width: 768px) {
   .projects {
-    height: 120vh;
-  }
-  #git-logo:hover{
-    transform: scale(1);
+    height: 180vh;
   }
   .project-item .caption .caption-content {
     color: #fff;
