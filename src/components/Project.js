@@ -5,10 +5,6 @@ import todo from "../assets/todo-list.png";
 import checkers from "../assets/checkers.png";
 import portfolio from "../assets/portfolio.png";
 import dayOrganizer from "../assets/day-organizer.png";
-<<<<<<< HEAD
-import Tc from "../assets/Tc.png";
-=======
->>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
 import "../styles/Project.css";
 
 const Project=()=> {
@@ -38,24 +34,9 @@ function formatProjects() {
     "Portfolio website developed with React. With respovsive design and clean animations";
     const dayOrganizerDis =
     "Day organizer full stack up developed with React Express and mongoDB";
-<<<<<<< HEAD
-    const trelloClone =
-    "Tc is a list-making application, you can add lists and cards to manage your daily work. support drag and drop system.";
 
   const projects = [
     {
-      homePage: "https://t-clone1221.herokuapp.com/",
-      title: "Tc",
-      image: Tc,
-      discription: trelloClone,
-      link: "https://github.com/Uri121/trello-clone/"
-    },
-    {
-=======
-
-  const projects = [
-    {
->>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
       homePage: "https://uri121.github.io/my-weather/",
       title: "Weather App",
       image: weaterIcon,

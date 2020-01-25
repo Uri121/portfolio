@@ -158,7 +158,6 @@
   align-items: center;
   margin: 0.5rem 0;
 }
-<<<<<<< HEAD
 @media (min-width: 1400px) {
   .projects{
     height: 150vh;
@@ -207,13 +206,6 @@
   and (-webkit-min-device-pixel-ratio: 1) { 
   .projects{
     height: 220vh;
-=======
-
-
-@media (min-width: 992px) {
-  .projects{
-    height: 130vh;
->>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
   }
   .project-item {
     max-width: none;
@@ -268,11 +260,7 @@
 
 @media (max-width: 360px){
   .projects {
-<<<<<<< HEAD
     height: 230vh;
-=======
-    height: 250vh;
->>>>>>> 3fb442bcc1acc541c874546b779175f50b0bc528
   }
   .img-fluid{
     height: 180px!important;
