@@ -1,0 +1,276 @@
+/* projects section start
+.projects {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-item{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.project-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.project-item .caption .caption-content {
+  color: white;
+  margin: auto 2rem 2rem;
+}
+
+
+.project-footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.btn-primary{
+  background: #24c6dc;
+  border-radius: 20px;
+  border: 0px;
+}
+
+#git-logo{
+  background: url("../assets/github.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px;
+  width: 38px;
+  height: 38px;
+}
+
+#git-logo:hover{
+  transform: scale(1.3);
+}
+
+@media (min-width: 992px) {
+  .project-item {
+    max-width: none;
+    margin: 0;
+    font-size: small;
+  }
+  .project-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .project-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .project-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .project-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .project-item:hover .caption {
+    background-color: rgba(14, 24, 27, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+}*/
+
+.projects {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.img-fluid{
+  height: 150px;
+  width: 100%;
+}
+
+.project-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.69);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.project-item .caption .caption-content {
+  color: #fff;
+  margin: 3rem 2rem;
+}
+
+.project-item .caption .caption-content h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.project-item .caption .caption-content p {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.btn-primary{
+  background: #24c6dc;
+  border-radius: 20px;
+  border: 0px;
+}
+
+#git-logo{
+  background: url("../assets/github-square-brands.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px;
+  width: 38px;
+  height: 40px;
+}
+.project-footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+@media (min-width: 1400px) {
+  .projects{
+    height: 150vh;
+  }
+  .project-item {
+    max-width: none;
+    margin: 0;
+  }
+  .project-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .project-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .project-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .project-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .project-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  #git-logo:hover{
+    transform: scale(1.3);
+  }
+  .img-fluid{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  .projects{
+    height: 220vh;
+  }
+  .project-item {
+    max-width: none;
+    margin: 0;
+  }
+  .project-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .project-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .project-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .project-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .project-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  #git-logo:hover{
+    transform: scale(1.3);
+  }
+  .img-fluid{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    height: 120vh;
+  }
+  #git-logo:hover{
+    transform: scale(1);
+  }
+  .project-item .caption .caption-content {
+    color: #fff;
+    margin: 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 360px){
+  .projects {
+    height: 230vh;
+  }
+  .img-fluid{
+    height: 180px!important;
+    width: 100%;
+  }
+  #git-logo:hover{
+    transform: scale(1);
+  }
+
+} 
+
+
+

@@ -1,0 +1,56 @@
+.toolbar {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #24c6dc;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 500;
+}
+
+.toolbar_navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.toolbar_navigation-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_navigation-items li {
+  font-size: x-large;
+  padding: 0.8rem 0.5rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+#link:hover{
+  color: wheat;
+}
+
+#link.active{
+  border-bottom: 3px solid wheat;
+  color: wheat;
+}
+
+
+
+@media (max-width: 768px){
+  .toolbar_navigation-items{
+    display: none;
+  }
+}
+
+@media (min-width: 769px){
+  .toolbar-toggle-button{
+    display: none;
+  }
+}
