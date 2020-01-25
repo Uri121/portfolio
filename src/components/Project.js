@@ -37,7 +37,7 @@ function formatProjects() {
     const dayOrganizerDis =
     "Day organizer full stack up developed with React Express and mongoDB";
   const trelloClone =
-    "Tc is a list-making application, you can add lists and cards to manage your daily work. support drag and drop system.";
+    "Tc is a list-making application, you can add lists and cards to manage your daily work.";
 
   const projects = [
     {
