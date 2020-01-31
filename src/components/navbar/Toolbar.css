@@ -1,6 +1,6 @@
 .toolbar {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #24c6dc;
+  background-color: #32acd0;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -32,25 +32,23 @@
   color: white;
 }
 
-#link:hover{
+#link:hover {
   color: wheat;
 }
 
-#link.active{
+#link.active {
   border-bottom: 3px solid wheat;
   color: wheat;
 }
 
-
-
-@media (max-width: 768px){
-  .toolbar_navigation-items{
+@media (max-width: 768px) {
+  .toolbar_navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px){
-  .toolbar-toggle-button{
+@media (min-width: 769px) {
+  .toolbar-toggle-button {
     display: none;
   }
 }

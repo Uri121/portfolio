@@ -9,21 +9,13 @@ import tc from "../assets/Tc.png";
 
 import "../styles/Project.css";
 
-const Project=()=> {
+const Project = () => {
   return (
     <div className="projects">
-      <div className="spacer">
-      <h2 className="display-5 text-center mb-1" style={{color:"wheat"}}>Recent Projects</h2>
-      </div>
-      <div className="container">
-      <div className="row no-gutters mt-5">
-        {formatProjects()}
-      </div>
-      </div>   
+      <div className="row no-gutters mt-5">{formatProjects()}</div>
     </div>
-
   );
-}
+};
 
 function formatProjects() {
   const weatherDis =
@@ -32,9 +24,9 @@ function formatProjects() {
     "Todo list app developed with React. you can add items to the list and delete by clicking on the item";
   const checkersDis =
     "Checkers game developed with C#. game with 3 diffrent board sizes, option to play against the PC";
-    const portfolioDis =
+  const portfolioDis =
     "Portfolio website developed with React. With respovsive design and clean animations";
-    const dayOrganizerDis =
+  const dayOrganizerDis =
     "Day organizer full stack up developed with React Express and mongoDB";
   const trelloClone =
     "Tc is a list-making application, you can add lists and cards to manage your daily work.";

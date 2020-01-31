@@ -16,7 +16,9 @@ const Thumbnail = ({ reading }) => {
               >
                 Check me out
               </a>
-              <a href={reading.link}><button id="git-logo"></button></a>
+              <a href={reading.link}>
+                <button id="git-logo"></button>
+              </a>
             </div>
           </span>
         </span>

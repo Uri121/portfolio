@@ -12,7 +12,6 @@ const Contact = props => {
         action="https://formspree.io/uri.rubin121@gmail.com"
         method="POST"
       >
-        <h1>Send A Message</h1>
         <input type="text" name="field1" placeholder="Your Name" required />
         <input
           type="email"

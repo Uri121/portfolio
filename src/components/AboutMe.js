@@ -3,23 +3,20 @@ import image from "../assets/logo.jpeg";
 
 import "../styles/AboutMe.css";
 
-
-const AboutMe = (props) => {
+const AboutMe = props => {
   return (
-    <div className="container">
     <div className="about-me">
-      <div className="about-me-imgs">
+      <div className="description">
         <img src={image} alt="" />
-        <p className="about-p">
+        <p>
           Hi, I'm Uri, Software Developer who loves to transform ideas into
-          reality using code.<br></br> I recently completed a bachelor's degree
-          in Computer Science, I enjoy being challenged and engaging with
-          projects that require me to work outside my comfort and knowledge set.
-          <br></br> I’m a team player, self-learner, out of the box thinker,
-          Initiator and creative.
+          reality using code. I recently completed a bachelor's degree in
+          Computer Science, I enjoy being challenged and engaging with projects
+          that require me to work outside my comfort and knowledge set. I’m a
+          team player, self-learner, out of the box thinker, Initiator and
+          creative.
         </p>
       </div>
-    
 
       <div className="skils-container">
         <div className="my-skils-card">
@@ -81,7 +78,37 @@ const AboutMe = (props) => {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  70%
+                  80%
+                </div>
+              </div>
+            </div>
+            <div className="my-progress">
+              <p>EXPRESS</p>
+              <div className="progress">
+                <div
+                  className="progress-bar"
+                  style={{ width: "90%" }}
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+            <div className="my-progress">
+              <p>REDUX</p>
+              <div className="progress">
+                <div
+                  className="progress-bar"
+                  style={{ width: "85%" }}
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
                 </div>
               </div>
             </div>
@@ -100,27 +127,11 @@ const AboutMe = (props) => {
                 </div>
               </div>
             </div>
-            <div className="my-progress">
-              <p>JAVA</p>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  style={{ width: "85%" }}
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  85%
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   );
-}
+};
 
 export default AboutMe;

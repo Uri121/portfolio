@@ -5,13 +5,13 @@
   box-shadow: 1px 0px 7px rgba(0, 0, 0.5);
   position: fixed;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #24c6dc;
+  background-color: #32acd0;
   z-index: 200;
   transform: translateX(-100%);
   transition: 0.3s ease-in;
 }
 
-.side-drawer.open{
+.side-drawer.open {
   transform: translateX(0);
 }
 
@@ -31,24 +31,23 @@
   color: white;
 }
 
-#link.fire{
+#link.fire {
   border-bottom: 4px solid wheat;
   color: wheat;
 }
 
-#link:hover{
+#link:hover {
   color: wheat;
 }
 
-
-@media (min-width: 769px){
-  .side-drawer{
+@media (min-width: 769px) {
+  .side-drawer {
     display: none;
   }
 }
 
-@media (max-width: 768px){
-  .side-drawer li{
-    margin-right: 37px ;
+@media (max-width: 768px) {
+  .side-drawer li {
+    margin-right: 37px;
   }
 }

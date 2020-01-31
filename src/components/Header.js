@@ -1,12 +1,12 @@
 import React from "react";
-import { Link  } from "react-scroll";
-import  ScrollUpButton from "react-scroll-up-button";
+import { Link } from "react-scroll";
+import ScrollUpButton from "react-scroll-up-button";
 
 const Header = () => {
-
   return (
     <div className="navbar">
-      <Link className="my-nav-item"
+      <Link
+        className="my-nav-item"
         activeClass="active"
         to="landing-page"
         spy={true}
@@ -16,7 +16,8 @@ const Header = () => {
       >
         Home
       </Link>
-      <Link className="my-nav-item"
+      <Link
+        className="my-nav-item"
         activeClass="active"
         to="aboutMe-container"
         spy={true}
@@ -26,7 +27,8 @@ const Header = () => {
       >
         About
       </Link>
-      <Link className="my-nav-item"
+      <Link
+        className="my-nav-item"
         activeClass="active"
         to="projects-container"
         spy={true}
@@ -36,7 +38,8 @@ const Header = () => {
       >
         Projects
       </Link>
-      <Link className="my-nav-item"
+      <Link
+        className="my-nav-item"
         activeClass="active"
         to="contact-container"
         spy={true}
@@ -45,11 +48,10 @@ const Header = () => {
         duration={700}
       >
         Contact
-      </Link>    
+      </Link>
       <ScrollUpButton></ScrollUpButton>
     </div>
   );
-}
+};
 
 export default Header;
-
