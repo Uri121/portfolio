@@ -2,13 +2,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Hand, cursive;
   background-color: #1f2747;
 }
 
 @media (max-width: 768px){
   body{
-    font-size:14px;
+    font-size:12px;
   }
 }
 
