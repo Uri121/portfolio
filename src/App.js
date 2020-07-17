@@ -7,21 +7,27 @@ import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import ScrollUpButton from "react-scroll-up-button";
+import ReactGa from "react-ga";
 
 class App extends Component {
   state = {
-    siderDrawerOpen: false
+    siderDrawerOpen: false,
   };
 
+  componentDidMount() {
+    ReactGa.initialize("UA-172941522-1");
+    ReactGa.pageview("/");
+  }
+
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
   drawerLinkClickHandler = () => {
     this.setState({
-      sideDrawerOpen: false
+      sideDrawerOpen: false,
     });
   };
 
