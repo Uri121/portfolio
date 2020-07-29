@@ -11,6 +11,12 @@
   padding: 16px;
 }
 
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .my-form input[type="text"],
 .my-form input[type="email"],
 .my-form textarea,
@@ -54,7 +60,7 @@
 
 .logos {
   padding: 1em;
-  margin-top: 1em;
+  margin-top: 1.7em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -66,4 +72,8 @@
   transform: scale(1.2);
   overflow: hidden;
   z-index: 1;
+}
+
+h5 {
+  margin-top: 2em;
 }

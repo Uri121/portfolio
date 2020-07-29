@@ -3,7 +3,7 @@ import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { Link } from "react-scroll";
 import "./Toolbar.css";
 
-const toolbar = props => (
+const toolbar = (props) => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
       <div className="toolbar-toggle-button">
@@ -22,7 +22,7 @@ const toolbar = props => (
               spy={true}
               smooth={true}
               offset={-60}
-              duration={1000}
+              duration={700}
             >
               Home
             </Link>
