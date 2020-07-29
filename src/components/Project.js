@@ -18,15 +18,15 @@ const Project = () => {
 
 function formatProjects() {
   const weatherDis =
-    "Weather app developed with React. you can enter the city or get your location via geolocation";
+    "Weather app developed with React. You can enter the city or get your location via geolocation";
   const todoDis =
-    "Todo list app developed with React. you can add items to the list and delete by clicking on the item";
+    "To-do list app developed with React. You can add items to the list and delete by clicking on the item";
   const stocksDis =
-    "Stocks app developed with React. choose from the stocks list the stock value u wish to see";
+    "Stocks app developed with React. Choose from the stocks list the stock value u wish to see";
   const dayOrganizerDis =
-    "Day organizer full stack up developed with React Express and mongoDB";
+    "Day organizer full-stack app developed with React Express and mongoDB";
   const trelloClone =
-    "Tc is a list-making application, you can add lists and cards to manage your daily work";
+    "Tc is a list-making app, you can add lists and cards to manage your daily work";
 
   const projects = [
     {
@@ -34,37 +34,36 @@ function formatProjects() {
       title: "Tc",
       image: tc,
       discription: trelloClone,
-      link: "https://github.com/Uri121/trello-clone/"
+      link: "https://github.com/Uri121/trello-clone/",
     },
     {
       homePage: "https://uri121.github.io/stocks/",
       title: "Stocks",
       image: stocks,
       discription: stocksDis,
-      link: "https://github.com/Uri121/stocks/"
+      link: "https://github.com/Uri121/stocks/",
     },
     {
       homePage: "https://react-day-organizer.herokuapp.com",
       title: "Day Organizer",
       image: dayOrganizer,
       discription: dayOrganizerDis,
-      link: "https://github.com/Uri121/day-organizer"
+      link: "https://github.com/Uri121/day-organizer",
     },
     {
       homePage: "https://uri121.github.io/my-weather/",
       title: "Weather App",
       image: weaterIcon,
       discription: weatherDis,
-      link: "https://github.com/Uri121/my-weather"
+      link: "https://github.com/Uri121/my-weather",
     },
     {
       homePage: "https://uri121.github.io/todo-list/",
-      title: "Todo List",
+      title: "To-do List",
       image: todo,
       discription: todoDis,
-      link: "https://github.com/Uri121/todo-list"
+      link: "https://github.com/Uri121/todo-list",
     },
-
   ];
   return projects.map((reading, index) => (
     <Thumbnail reading={reading} key={index} />

@@ -3,7 +3,7 @@ import image from "../assets/logo.jpeg";
 
 import "../styles/AboutMe.css";
 
-const AboutMe = props => {
+const AboutMe = (props) => {
   return (
     <div className="about-me">
       <div className="description">
@@ -13,14 +13,14 @@ const AboutMe = props => {
           reality using code. I recently completed a bachelor's degree in
           Computer Science, I enjoy being challenged and engaging with projects
           that require me to work outside my comfort and knowledge set. I’m a
-          team player, self-learner, out of the box thinker, Initiator and
+          team player, self-learner, out of the box thinker, initiator and
           creative.
         </p>
       </div>
 
       <div className="skils-container">
         <div className="my-skils-card">
-          <div className="card-title">Skils</div>
+          <div className="card-title">Proficiency</div>
           <div className="card-body">
             <div className="my-progress">
               <p>HTML5</p>
