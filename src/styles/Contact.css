@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .my-form {
   width: 70%;
   border-radius: 20px;
@@ -11,12 +12,6 @@
   padding: 16px;
 }
 
-.contact {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .my-form input[type="text"],
 .my-form input[type="email"],
 .my-form textarea,
@@ -76,4 +71,13 @@
 
 h5 {
   margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
